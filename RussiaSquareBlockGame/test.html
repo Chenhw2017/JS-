@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+    td {
+        width: 100px;
+        height: 100px;
+    }
+</style>
+
+<body>
+    <table id="preBoard" cellspacing="0" cellpadding="0" border="1" style="border-collapse:collapse;">
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+    <script>
+        var table = document.getElementsByTagName('table')[0];
+        table.rows[2].style.backgroundColor = 'red';
+        // document.onkeydown = keyControl;
+
+        // function keyControl(ev) {
+        //     var eve = ev || event;
+        //     code = eve.keyCode;
+        //     console.log(code);
+        // }
+        var o = {
+            color: 'red',
+            sayHi: function() {
+                alert('hhhh');
+            }
+        }
+        console.log(o.color);
+    </script>
+
+</body>
+
+</html>
